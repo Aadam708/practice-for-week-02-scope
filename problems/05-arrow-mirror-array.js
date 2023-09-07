@@ -12,6 +12,17 @@ arrowMirrorArray(['a', 'b', 'c', 'd']); // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b
 
 // Your code here
 
+const arrowMirrorArray = array => {
+
+  const arr = array
+
+  for (let i = array.length -1; i>=0; i--){
+
+    arr.push(array[i])
+  }
+
+  return arr
+}
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

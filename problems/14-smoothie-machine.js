@@ -24,6 +24,38 @@ console.log(smoothie2("pineapple"));
 
 // Your code here
 
+const smoothieMachine = (...smoothies) => {
+
+  const sentence = "I'm having a smoothie with".split(" ")
+
+  smoothies.shift()
+
+
+  smoothies.forEach(smoothie => {
+
+    sentence.push(smoothie, "and")
+  })
+
+  return function (...new_smoothies) {
+
+    new_smoothies.forEach((new_smoothie, i) => {
+
+
+      if (i !== new_smoothies.length){
+
+        sentence.push(new_smoothie, "and")
+      }
+
+      else{
+        sentence.push(new_smoothie)
+      }
+
+      return sentence.join(" ")
+    })
+
+  }
+}
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
   module.exports = smoothieMachine;

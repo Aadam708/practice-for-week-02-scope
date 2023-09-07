@@ -27,6 +27,24 @@ Example 3:
 
 // Your code here
 
+let coinCollector = function (num) {
+
+
+  let coins = []
+
+  for (let i = 0; i<num; i++) {
+
+    return function (coin) {
+
+      coins.push(coin)
+
+
+
+      return coins
+    }
+  }
+}
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

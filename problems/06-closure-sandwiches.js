@@ -19,6 +19,20 @@ sandwich2("pb") // => "One sandwich with tomato and pb"
 
 // Your code here
 
+
+const sandwichMaker = function () {
+
+  const sentence = []
+
+  return function (ingredient){
+
+    sentence.push("and", ingredient)
+
+    return "One sandwich with tomato " + sentence.join(" ")
+  }
+
+
+}
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

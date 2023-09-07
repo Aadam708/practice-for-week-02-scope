@@ -20,6 +20,20 @@ console.log(result2);   // [ 'RUN!', 'FORREST!' ]
 
 // Your code here
 
+const arrowMyMap = (array, cb) => {
+
+  const arr = []
+
+  array.forEach((ele,i) => {
+
+    const sqrt = cb(ele,i,array)
+
+    arr.push(sqrt)
+  })
+
+  return arr
+}
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

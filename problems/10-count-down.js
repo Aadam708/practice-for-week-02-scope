@@ -30,6 +30,30 @@ Example 4:
 
 // Your code here
 
+const countDownTimer = function (num) {
+
+  if (num ===0){
+    return "Happy New Year!"
+  }
+
+  let count = num
+
+  if (count > 0){
+      count--
+      return function(){
+
+          if (count > 0){
+              count--
+              return function () {
+                  return
+              }
+          }
+          else{
+              return "Happy New Year!"
+          }
+      }
+  }
+}
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

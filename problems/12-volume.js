@@ -15,6 +15,31 @@ function returned by recVolume should continue to return the original volume.
 
 // Your code here
 
+let recVolume = function (height) {
+
+
+
+  let volume = height
+
+  let count = 0
+
+  return num => {
+
+    if (count < 2) {
+
+      volume *= num
+      count++
+      return volume
+    }
+
+    else{
+      return volume
+    }
+  }
+
+
+}
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

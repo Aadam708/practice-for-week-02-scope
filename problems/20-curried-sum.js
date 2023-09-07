@@ -45,6 +45,32 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 
 // Your code here
 
+let curriedSum = function (times) {
+
+  if (times <= 0) {
+    return null
+  }
+
+  let start = 0
+
+  return function inner (num) {
+
+    start +=num
+
+    times--
+
+    if (times ===0) {
+
+      return start
+    }
+
+    return inner
+  }
+
+
+
+}
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

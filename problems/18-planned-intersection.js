@@ -17,6 +17,24 @@ console.log(fame(["a", "f", "z", "b"])); // returns [ 'f', 'a' ]
 
 // Your code here
 
+const plannedIntersect = function (array1) {
+
+  return function (array2) {
+
+    let includes_arr = []
+
+    array2.forEach(ele => {
+
+      if (array1.includes(ele)) {
+
+        includes_arr.push(ele)
+      }
+    })
+
+    return includes_arr
+  }
+}
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 
 try {
